@@ -1,6 +1,4 @@
 # ZPluginHidder
-Fully Customizable plugin for Minecraft to hide /plugins command 
-# ZPluginHidder
 ZPluginHidder is a Minecraft plugin designed to make server customization easier for users. With this plugin, users can fully customize their server settings and output messages, including customizing the /plugins command and the command not found message.
 
 # Installation
