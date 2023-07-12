@@ -1,14 +1,12 @@
-name: ManaZPluginHidder
+name: ZPluginHidder
 version: '${project.version}'
 main: fr.manaa.Main
 api-version: 1.19
 prefix: ManaZPLHidder
-authors: [ Manaa_ ]
+authors: [ Mana ]
 description: Fully Customizable plugin to hide /plugins command and edit unknow command message
 website:
   Discord: Mana#6258
 commands:
-  pluginhidder:
-    aliases:
-      - ph
-      - plhidder
+  zpluginhidder:
+    aliases: zh

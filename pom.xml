@@ -5,13 +5,13 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>fr.manaa</groupId>
-    <artifactId>ManaZPluginHidder</artifactId>
+    <artifactId>ZPluginHidder</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
 
-    <name>ManaZPluginHidder</name>
+    <name>ZPluginHidder</name>
 
-    <description>Fully Customizable plugin to hide /plugins command and edit unknow command message</description>
+    <description>ZPluginHidder by Manaa_ is a fully Customizable plugin to hide /plugins command and edit unknow command message</description>
     <properties>
         <java.version>1.8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>

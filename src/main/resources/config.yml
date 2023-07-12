@@ -1,0 +1,24 @@
+plugin-messages:
+  NoPerm: "§cError, you doesn't have permission to do that !"
+  Unknown-command:
+    enable: true
+    message: "&cError, this command doesn't exist."
+  Hidder: # Here, it's the message who is send when player make a command present in commands-hidden section
+    - "&n&f                                   "
+    - "  &6Plugins&f:"
+    - "&7• Plugins par TerraCraft (%pluginNumber%) : &a%pluginAuthorsList%"
+    - "&n&f                                   "
+    - "&7• Plugins externes (?): &aLuckPerms&f, &aVault&f, &aProtocolib&f, &aViaVersion&f, &aLands&f, &aPAPI&f et autres"
+    - "&n&f                                   "
+    - "&7• Autres (?)"
+    - "&n&f                                   "
+    -
+commands-hidden:
+  - "/plugins"
+  - "/pl"
+  - "/about"
+  - "/bukkit"
+show-authors:
+  - "Mana"
+  - "Nclp"
+  - "Fazdix"
