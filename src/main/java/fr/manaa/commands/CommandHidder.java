@@ -5,6 +5,7 @@ import org.bukkit.*;
 import org.bukkit.entity.*;
 import org.bukkit.event.*;
 import org.bukkit.event.player.*;
+import org.bukkit.event.server.*;
 import org.bukkit.plugin.*;
 
 import java.util.*;
@@ -37,15 +38,8 @@ public class CommandHidder implements Listener {
 
         // If command is a command contained in config.yml
         if(commandsList.contains(cmd)){
-            if(cmd.length() > 0){
-                e.setCancelled(true);
-                sendHiddingMessage(player);
-            }
-            else{
-                e.setCancelled(true);
-                sendHiddingMessage(player);
-            }
-
+            e.setCancelled(true);
+            sendHiddingMessage(player);
         }
     }
 
@@ -62,6 +56,18 @@ public class CommandHidder implements Listener {
                     .replace("%pluginNumber%", ""+pluginNumber)
                     .replace("%otherPluginNumber%",""+getOtherPlugins())
                     .replace("%totalPluginNumber%", ""+getTotalPluginNumber()));
+        }
+    }
+
+    @EventHandler(priority = EventPriority.HIGHEST)
+    public void onTabComplete(TabCompleteEvent e) {
+        if (e.getSender() instanceof Player) {
+            Player player = (Player) e.getSender();
+            String cmd = e.getBuffer(); // Récupérer la commande saisie
+
+            if (cmd.startsWith("/about")) {
+                e.setCancelled(true); // Annuler la complétion automatique
+            }
         }
     }
 
