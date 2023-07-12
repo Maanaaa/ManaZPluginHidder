@@ -38,6 +38,10 @@ public class CommandHidder implements Listener {
 
         // If command is a command contained in config.yml
         if(commandsList.contains(cmd)){
+            if(cmd.length() > 0){
+                e.setCancelled(true);
+                sendHiddingMessage(player);
+            }
             e.setCancelled(true);
             sendHiddingMessage(player);
         }
